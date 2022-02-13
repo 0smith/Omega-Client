@@ -1,0 +1,24 @@
+{
+    "name": "omega-client",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "electron ."
+    },
+    "keywords": [
+        "Minecraft",
+        "electron"
+    ],
+    "author": "UNDER_DEV",
+    "license": "GNU AGPLv3",
+    "devDependencies": {
+        "electron": "^17.0.0",
+        "electron-builder": "^22.14.13"
+    },
+    "dependencies": {
+        "axios": "^0.25.0",
+        "bootstrap-icons": "^1.8.1",
+        "minecraft-launcher-core": "^3.16.11"
+    }
+}

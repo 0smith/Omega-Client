@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./assets/css/css_index.css" />
+</head>
+
+<body>
+    <nav>
+        <img id="logo" class="logo" src="./assets/img/logo.png" width="128" height="128"></img>
+        <div class="menu">
+            <span style="--i:0;--x:-1;--y:0"><ion-icon name="home-outline"></ion-icon></span>
+            <span style="--i:1;--x:1;--y:0"><ion-icon name="settings-outline"></ion-icon></span>
+            <span style="--i:2;--x:0;--y:-1"><ion-icon name="musical-notes-outline"></ion-icon></span>
+            <span style="--i:3;--x:0;--y:1"><ion-icon name="server-outline"></ion-icon></span>
+            <span style="--i:4;--x:1;--y:1"><ion-icon name="rocket-outline"></ion-icon></span>
+            <span style="--i:5;--x:-1;--y:-1"><ion-icon name="person-outline"></ion-icon></span>
+            <span style="--i:6;--x:0;--y:0"><ion-icon name="grid-outline"></ion-icon></span>
+            <span style="--i:7;--x:-1;--y:1"><ion-icon name="shirt-outline"></ion-icon></span>
+            <span style="--i:8;--x:1;--y:-1"><ion-icon name="storefront-outline"></ion-icon></span>
+        </div>
+        <h2 class="version">V1</h2>
+        <h1 class="NAME">OMEGA CLIENT</h1>
+    </nav>
+    <button class="play-game">JOUER -</button>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        let menu = document.querySelector('.menu');
+        menu.onclick = function() {
+            menu.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Mukta&display=swap');
+body {
+    background-color: #172144;
+    margin: 0px;
+}
+
+nav {
+    background: #111933 0% 0% no-repeat padding-box;
+    top: 0px;
+    left: 0px;
+    width: 1293px;
+    height: 120px;
+}
+
+.logo {
+    position: relative;
+    top: 4px;
+    left: -16px;
+    width: 128px;
+    height: 128px;
+}
+
+.NAME {
+    position: absolute;
+    top: 25px;
+    left: 120px;
+    width: 340px;
+    height: 51px;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.version {
+    position: absolute;
+    top: 5px;
+    left: 50px;
+    width: 340px;
+    height: 51px;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 1200px;
+    width: 70px;
+    height: 70px;
+    background-color: #134074;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-delay: 0.8s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu.active {
+    left: 988px;
+    width: 282px;
+    height: 282px;
+    transition-delay: 0s;
+}
+
+.menu span {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7px;
+    height: 7px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    transform: translate(calc(12px * var(--x)), calc(12px * var(--y)));
+    transition: transform 0.5s, width 0.5s, height 0.5s, background 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+}
+
+.menu.active span {
+    width: 45px;
+    height: 45px;
+    background: #333849;
+    transform: translate(calc(80px * var(--x)), calc(80px * var(--y)));
+}
+
+.menu span ion-icon {
+    transition: 0.5s;
+    font-size: 0em;
+}
+
+.menu.active span ion-icon {
+    font-size: 1.35em;
+    color: #FFFFFF;
+}
+
+.menu.active span:hover ion-icon {
+    color: #2dfc52;
+    filter: drop-shadow(0 0 2px #2dfc52) drop-shadow(0 0 5px #2dfc52) drop-shadow(0 0 15px #2dfc52);
+}
+
+.play-game {
+    background: linear-gradient(#EA52F8, #0066FF);
+    border: transparent;
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-left: 550px;
+    width: 215px;
+    height: 100px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.50em;
+}
